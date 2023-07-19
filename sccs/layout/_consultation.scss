@@ -1,0 +1,161 @@
+#consultation {
+  margin-bottom: 80px;
+  .consultation-wrapper {
+    &-title {
+      color: $black1;
+      font-size: 32px;
+      font-family: OpenSansBold;
+      line-height: normal;
+      letter-spacing: -0.96px;
+      margin-bottom: 15px;
+    }
+    &-desc {
+      color: $black1;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 160%;
+      margin-bottom: 30px;
+    }
+    &-list {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      .item1 {
+        width: 100%;
+        max-width: 270px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 15px;
+        border-radius: 20px;
+        border: 1px solid $gray2;
+
+        &-desc {
+          color: $black1;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: normal;
+        }
+        &-desc1 {
+          color: $black1;
+          font-family: OpenSansBold;
+          font-size: 20px;
+          line-height: normal;
+        }
+        &-link {
+          color: $first-color;
+          text-align: center;
+          font-family: OpenSansSemiBold;
+          font-size: 16px;
+          line-height: normal;
+        }
+      }
+      &-item {
+        width: 100%;
+        max-width: 270px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        border-radius: 20px;
+        border: 1px solid $gray2;
+
+        .svg {
+          margin-bottom: 15px;
+        }
+        &-desc {
+          color: $black1;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 35px;
+        }
+        &-btn {
+          color: $first-color;
+          text-align: center;
+          font-family: OpenSansSemiBold;
+          font-size: 16px;
+          line-height: normal;
+          border: none;
+          cursor: pointer;
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #consultation {
+    .consultation-wrapper {
+      &-title {
+        font-size: 20px;
+        letter-spacing: -0.6px;
+      }
+      &-desc {
+        font-size: 14px;
+      }
+      &-list {
+        .item1{
+          max-width: 175px;
+          height: 200px;
+          &-desc{
+            font-size: 14px;
+          }
+          &-desc1{
+            font-size: 15px;
+          }
+           &-link{
+            font-size: 13px;
+           }
+        }
+        &-item {
+          max-width: 175px;
+          height: 200px;
+          &-desc {
+            font-size: 14px;
+          }
+          &-btn{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 390px) {
+  #consultation {
+    .consultation-wrapper {
+      
+      &-list {
+        flex-wrap: wrap;
+        gap: 10px;
+        .item1{
+          max-width: 155px;
+          height: 200px;
+          &-desc{
+            font-size: 13px;
+          }
+          &-desc1{
+            font-size: 15px;
+          }
+          &-link{
+            font-size: 13px;
+          }
+        }
+        &-item {
+          max-width: 155px;
+          height: 200px;
+          &-desc {
+            font-size: 13px;
+          }
+          &-btn{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

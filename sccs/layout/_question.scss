@@ -1,0 +1,179 @@
+#question {
+  margin-top: 80px;
+ 
+  .wrapper {
+    border-radius: 20px;
+    background: var(--gray-background, rgba(47, 43, 67, 0.04));
+    padding-left: 53px;
+    padding-right: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      gap: 50px;
+      .q-title {
+        width: 100%;
+        max-width: 295px;
+        color: $black1;
+        font-family: OpenSansBold;
+        font-size: 32px;
+        line-height: normal;
+        letter-spacing: -0.96px;
+      }
+      .btn-box {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        .btn-box1 {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          margin-bottom: 18px;
+          .number-box {
+            display: flex;
+            flex-direction: column;
+            row-gap: 3px;
+            border-radius: 10px;
+            border: 1px solid $gray2;
+            background: $white;
+            padding: 10px 16px;
+
+            &-desc1 {
+              color: var(--gray-low, rgba(47, 43, 67, 0.4));
+              text-align: center;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: normal;
+            }
+            &-desc2 {
+              color: $black1;
+              text-align: center;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+          &-btn {
+            border-radius: 10px;
+            background: $first-color;
+            padding: 17px 36px;
+            cursor: pointer;
+            border: none;
+            color: $white;
+            text-align: center;
+            font-family: OpenSansSemiBold;
+            font-size: 16px;
+            line-height: normal;
+
+            &:hover {
+              background: $fourth-color;
+            }
+          }
+        }
+        &-desc {
+          width: 100%;
+          max-width: 293px;
+          color: var(--gray-low, rgba(47, 43, 67, 0.4));
+          font-size: 12px;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #question {
+    .wrapper {
+      padding: 20px 20px 0 20px;
+      align-items: stretch;
+    div{
+      flex-direction: column;
+      gap: 40px;
+      .q-title {
+        width: 100%;
+        max-width: 300px;
+        font-size: 28px;
+        margin-bottom: 15px;
+      }
+      .btn-box {
+        .btn-box1 {
+          flex-direction: column;
+          gap: 15px;
+          margin-bottom: 18px;
+          .number-box {
+            width: 100%;
+
+            &-desc1 {
+              text-align: start;
+              font-size: 12px;
+            }
+          }
+          &-btn {
+            width: 100%;
+          }
+        }
+        &-desc {
+          width: 100%;
+          max-width: 293px;
+          color: var(--gray-low, rgba(47, 43, 67, 0.4));
+          font-size: 12px;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+
+      
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  #question {
+    .wrapper {
+      padding: 20px 20px 0 20px;
+      flex-direction: column;
+      align-items: stretch;
+      div {
+        flex-direction: column;
+        gap: 30px;
+        .q-title {
+          width: 100%;
+          max-width: 300px;
+          font-size: 28px;
+          margin-bottom: 15px;
+        }
+        .btn-box {
+          .btn-box1 {
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 18px;
+            .number-box {
+              width: 100%;
+
+              &-desc1 {
+                text-align: start;
+                font-size: 12px;
+              }
+            }
+            &-btn {
+              width: 100%;
+            }
+          }
+          &-desc {
+            width: 100%;
+            max-width: 293px;
+            color: var(--gray-low, rgba(47, 43, 67, 0.4));
+            font-size: 12px;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}

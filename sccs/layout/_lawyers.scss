@@ -1,0 +1,547 @@
+#lawyers {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .law-title {
+      color: $black1;
+      font-family: OpenSansBold;
+      font-size: 32px;
+      line-height: normal;
+      letter-spacing: -0.96px;
+      margin-bottom: 30px;
+    }
+
+    .law-form-box {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .law-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          border-radius: 20px;
+          border: 1px solid $gray2;
+          padding: 20px;
+
+          img {
+            width: 70px;
+            height: 70px;
+          }
+          .titbox {
+            &-title {
+              color: $black1;
+              font-family: OpenSansSemiBold;
+              font-size: 18px;
+              line-height: normal;
+              margin-bottom: 5px;
+            }
+            &-desc1 {
+              color: $black1;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: normal;
+              margin-bottom: 10px;
+            }
+            &-desc2 {
+              color: $gray;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+        }
+        &-btn {
+          padding: 17px 36px;
+          border-radius: 10px;
+          background: #e0ece9;
+          color: $first-color;
+          cursor: pointer;
+          text-align: center;
+          font-family: OpenSansSemiBold;
+          font-size: 16px;
+          line-height: normal;
+          border: none;
+
+          &:hover {
+            background: $fourth-color;
+            color: $white;
+          }
+        }
+      }
+      .form-block {
+        border-radius: 20px;
+        background: $first-color;
+        padding: 40px;
+        .first-block {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 30px;
+          position: relative;
+
+          &-title {
+            width: 100%;
+            max-width: 358px;
+            color: $white;
+            font-family: OpenSansBold;
+            font-size: 32px;
+            line-height: normal;
+            letter-spacing: -0.96px;
+            margin-bottom: 10px;
+          }
+          &-desc1 {
+            width: 100%;
+            max-width: 465px;
+            color: $white;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: normal;
+          }
+          &-desc2 {
+            position: absolute;
+            top: -10px;
+            right: 0;
+            padding: 6px 16px;
+            background: $white;
+            width: 100%;
+            max-width: 115px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+        .form {
+          textarea {
+            border-radius: 10px;
+            background: $white;
+            margin-bottom: 20px;
+
+            &::placeholder {
+              color: var(--gray-medium, rgba(47, 43, 67, 0.5));
+              text-align: center;
+              font-family: Open Sans;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+          .label-box {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            .label1 {
+              padding: 8px 16px;
+              background: $white;
+              border-radius: 10px;
+
+              &-desc {
+                color: var(--gray-low, rgba(47, 43, 67, 0.4));
+                font-size: 12px;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 3px;
+              }
+              .tel {
+                border: none;
+                color: black;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+            .label2 {
+              padding: 8px 16px;
+              background: $white;
+              border-radius: 10px;
+
+              &-desc {
+                color: var(--gray-low, rgba(47, 43, 67, 0.4));
+                font-size: 12px;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 3px;
+              }
+              .text {
+                border: none;
+                color: #000;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+            .submit {
+              padding: 17px 24px;
+              border-radius: 10px;
+              background: #000;
+              color: $white;
+              text-align: center;
+              font-family: OpenSansSemiBold;
+              font-size: 16px;
+              line-height: normal;
+              border: none;
+              cursor: pointer;
+            }
+          }
+        }
+        &-desc {
+          color: rgba(255, 255, 255, 0.5);
+          font-family: OpenSansSemiBold;
+          font-size: 12px;
+          line-height: normal;
+          margin-bottom: 40px;
+        }
+        .law-answer {
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          .laws {
+            &-desc1 {
+              color: $white;
+              font-family: OpenSansBold;
+              font-size: 20px;
+              line-height: normal;
+              letter-spacing: -0.6px;
+              margin-bottom: 10px;
+            }
+            &-desc2 {
+              color: $white;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+          .answer {
+            &-desc1 {
+              color: $white;
+              font-family: OpenSansBold;
+              font-size: 20px;
+              line-height: normal;
+              letter-spacing: -0.6px;
+              margin-bottom: 10px;
+            }
+            &-desc2 {
+              color: $white;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #lawyers {
+    margin-top: 40px;
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .law-title {
+        font-size: 20px;
+      }
+
+      .law-form-box {
+        flex-direction: column;
+        .law-list {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          row-gap: 15px;
+          li {
+            width: 100%;
+            max-width: 700px;
+            img {
+              width: 70px;
+              height: 70px;
+            }
+            .titbox {
+              &-title {
+                color: $black1;
+                font-family: OpenSansSemiBold;
+                font-size: 18px;
+                line-height: normal;
+                margin-bottom: 5px;
+              }
+              &-desc1 {
+                color: $black1;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 10px;
+              }
+              &-desc2 {
+                color: $gray;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+          }
+          &-btn {
+            padding: 17px 36px;
+            border-radius: 10px;
+            background: #e0ece9;
+            color: $first-color;
+            cursor: pointer;
+            text-align: center;
+            font-family: OpenSansSemiBold;
+            font-size: 16px;
+            line-height: normal;
+            border: none;
+
+            &:hover {
+              background: $fourth-color;
+              color: $white;
+            }
+          }
+        }
+        .form-block {
+          padding: 50px 20px;
+          .first-block {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            position: relative;
+            &-title {
+              width: 100%;
+              max-width: 435px;
+              font-size: 28px;
+              margin-bottom: 5px;
+            }
+            &-desc1 {
+              width: 100%;
+              max-width: 294px;
+              font-size: 12px;
+              letter-spacing: -0.36px;
+            }
+            &-desc2 {
+              position: absolute;
+              top: -35px;
+              left: 0;
+              padding: 6px 16px;
+              background: $white;
+              width: 100%;
+              max-width: 115px;
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+          }
+          .form {
+            flex-direction: column;
+            textarea {
+              height: 400px;
+              width: 660px;
+              margin-bottom: 20px;
+            }
+            .label-box {
+              flex-direction: column;
+              margin-bottom: 15px;
+              .label1 {
+                width: 100%;
+              }
+              .label2 {
+                width: 100%;
+              }
+              .submit {
+                width: 100%;
+              }
+            }
+          }
+          &-desc {
+          
+          font-size: 14px;
+          
+        }
+
+          .law-answer {
+            gap: 40px;
+            .laws {
+              &-desc1 {
+                font-size: 20px;
+                letter-spacing: -0.90px;
+              }
+              &-desc2 {
+                font-size: 16px;
+              }
+            }
+            .answer {
+              &-desc1 {
+                font-size: 20px;
+                letter-spacing: -0.90px;
+              }
+              &-desc2 {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  #lawyers {
+    margin-top: 40px;
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .law-title {
+        font-size: 20px;
+      }
+
+      .law-form-box {
+        flex-direction: column;
+        .law-list {
+          display: flex;
+          flex-direction: column;
+          row-gap: 15px;
+          li {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-radius: 20px;
+            border: 1px solid $gray2;
+            padding: 20px;
+
+            img {
+              width: 70px;
+              height: 70px;
+            }
+            .titbox {
+              &-title {
+                color: $black1;
+                font-family: OpenSansSemiBold;
+                font-size: 18px;
+                line-height: normal;
+                margin-bottom: 5px;
+              }
+              &-desc1 {
+                color: $black1;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 10px;
+              }
+              &-desc2 {
+                color: $gray;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+          }
+          &-btn {
+            padding: 17px 36px;
+            border-radius: 10px;
+            background: #e0ece9;
+            color: $first-color;
+            cursor: pointer;
+            text-align: center;
+            font-family: OpenSansSemiBold;
+            font-size: 16px;
+            line-height: normal;
+            border: none;
+
+            &:hover {
+              background: $fourth-color;
+              color: $white;
+            }
+          }
+        }
+        .form-block {
+          padding: 50px 20px;
+          .first-block {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            position: relative;
+            &-title {
+              width: 100%;
+              max-width: 235px;
+              font-size: 20px;
+              margin-bottom: 5px;
+            }
+            &-desc1 {
+              width: 100%;
+              max-width: 294px;
+              font-size: 12px;
+              letter-spacing: -0.36px;
+            }
+            &-desc2 {
+              position: absolute;
+              top: -35px;
+              left: 0;
+              padding: 6px 16px;
+              background: $white;
+              width: 100%;
+              max-width: 115px;
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+          }
+          .form {
+            flex-direction: column;
+            textarea {
+              height: 200px;
+              width: 300px;
+              margin-bottom: 20px;
+            }
+            .label-box {
+              flex-direction: column;
+              margin-bottom: 15px;
+              .label1 {
+                width: 100%;
+              }
+              .label2 {
+                width: 100%;
+              }
+              .submit {
+                width: 100%;
+              }
+            }
+          }
+
+          .law-answer {
+            gap: 30px;
+            .laws {
+              &-desc1 {
+                font-size: 16px;
+                letter-spacing: -0.48px;
+              }
+              &-desc2 {
+                font-size: 12px;
+              }
+            }
+            .answer {
+              &-desc1 {
+                font-size: 16px;
+                letter-spacing: -0.48px;
+              }
+              &-desc2 {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

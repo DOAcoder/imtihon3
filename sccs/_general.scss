@@ -1,0 +1,37 @@
+*::after,
+*::before,
+*
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+body{
+  font-family: OpenSansRegular;
+
+}
+
+
+@font-face {
+  font-family: OpenSansBold;
+  src: url(../assets/fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: OpenSansRegular;
+  src: url(../assets/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: OpenSansSemibold;
+  src: url(../assets/fonts/OpenSans-SemiBold.ttf);
+}
+
+a{
+  text-decoration: none;
+}
+ul,ol,li{
+  list-style-type: none;
+}

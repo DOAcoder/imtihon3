@@ -1,0 +1,215 @@
+#hero {
+  margin-top: 40px;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .hero-sub-desc1 {
+      display: none !important;
+      margin-bottom: 20px;
+    }
+    .hero-block {
+      display: none;
+      .hero-img {
+        display: none !important;
+      }
+    }
+
+    &-left-side {
+      .hero-sub-desc {
+        width: 100%;
+        max-width: 207px;
+        margin-bottom: 49px;
+        color: $gray;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      .hero-title {
+        width: 100%;
+        max-width: 657px;
+        color: $black1;
+        font-family: OpenSansBold;
+        font-size: 38px;
+        line-height: normal;
+        letter-spacing: -1.14px;
+      }
+      .hero-desc {
+        width: 100%;
+        max-width: 550px;
+        color: $gray;
+        font-weight: 400;
+        line-height: 160%;
+        margin-bottom: 30px;
+      }
+      .info-box {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 41px;
+
+        &-btn {
+          padding: 16px 36px;
+          border-radius: 10px;
+          background: $first-color;
+          cursor: pointer;
+          border: none;
+
+          color: $white;
+          text-align: center;
+          font-family: OpenSansSemiBold;
+          font-size: 16px;
+          line-height: normal;
+
+          &:hover {
+            background: $fourth-color;
+          }
+        }
+        &-link {
+          display: flex;
+          flex-direction: column;
+          row-gap: 7px;
+          color: $first-color;
+          font-size: 24px;
+          font-family: OpenSansBold;
+          line-height: normal;
+          position: relative;
+
+
+          &::after {
+            content: "";
+            display: block;
+            width: 180px;
+            height: 2px;
+            background: #33836e;
+            position: absolute;
+           top: 30px;
+          }
+
+          span {
+            color: $gray;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+
+      .hero-list {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        &-item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          &-desc {
+            color: $black1;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    &-rigth-side {
+      padding-top: 20px;
+      img {
+        width: 377px;
+        height: 402px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #hero {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+      .hero-sub-desc1 {
+        display: block !important;
+      }
+      .hero-block {
+        width: 100%;
+        display: flex !important;
+        justify-content: center !important;
+        .hero-img {
+          display: block !important;
+        }
+      }
+      &-left-side {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .hero-sub-desc {
+          display: none !important;
+        }
+        .hero-title {
+          width: 100%;
+          max-width: 550px;
+          text-align: center;
+          font-size: 30px;
+        }
+      }
+      .hero-desc {
+        max-width: 410px;
+        text-align: center;
+      }
+      .info-box {
+        display: flex;
+        flex-direction: column;
+
+        &-btn {
+          width: 350px;
+        }
+      }
+      .hero-list {
+      
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // column-gap: 50px;
+
+        &-item {
+          width: 300px;
+        }
+      }
+      &-rigth-side {
+        display: none !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 390px) {
+  #hero {
+    .wrapper {
+      .hero-block {
+        .hero-img {
+          display: block !important;
+          width: 235px;
+          height: 250px;
+        }
+      }
+      &-left-side{
+        .hero-title{
+          font-size: 22px;
+        }
+      }
+      .hero-list{
+        span{
+          display: none !important;
+        }
+        &-item{
+          width: 150px !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+#call-center {
+  margin-bottom: 80px;
+  .call-wrapper {
+    height: 250px;
+    background-image: url("../../assets/icons/call_center/Ellipse\ 14.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: calc(50% - 427px) calc(50% + 45px);
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    gap: 50px;
+    padding: 20px 50px;
+    background-color: $first-color;
+    border-radius: 20px;
+
+    &-img {
+      width: 380px;
+      height: 250px;
+    }
+    .phone-num {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+
+      &-desc {
+        width: 100%;
+        max-width: 334px;
+        color: $white;
+        font-family: OpenSansSemibold;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: normal;
+      }
+      &-title {
+        color: $white;
+        font-family: OpenSansBold;
+        font-size: 42px;
+        line-height: normal;
+        letter-spacing: -1.26px;
+      }
+    }
+    .lawyer {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+
+      &-desc {
+        color: $white;
+        font-family: OpenSansSemibold;
+        text-align: center;
+        font-size: 18px;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #call-center {
+    .call-wrapper {
+      overflow: hidden;
+      max-width: 700px;
+      height: 300px;
+      flex-direction: column;
+      align-items: start;
+      gap: 0;
+      background-position: calc(50% - 300px) calc(50% + 136px);
+      position: relative;
+
+      &-img {
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        top: 110px;
+        left: -31px;
+      }
+      .phone-num {
+        &-desc {
+          font-size: 15px;
+        }
+        &-title {
+          font-size: 30px;
+          letter-spacing: -1.08px;
+        }
+      }
+      .lawyer {
+        margin-left: 180px;
+        margin-top: 50px;
+
+        &-desc {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  #call-center {
+    .call-wrapper {
+      overflow: hidden;
+      max-width: 360px;
+      flex-direction: column;
+      align-items: start;
+      gap: 0;
+      background-position: calc(50% - 100px) calc(50% + 50px);
+      position: relative;
+
+      &-img {
+        max-width: 300px;
+        height: 180px;
+        position: absolute;
+        top: 120px;
+        left: -31px;
+      }
+      .phone-num {
+        row-gap: 5px;
+        &-desc {
+          font-size: 12px;
+        }
+        &-title {
+          font-size: 25px;
+          letter-spacing: -0.8px;
+        }
+      }
+      .lawyer {
+        margin-left: 90px;
+        margin-top: 70px;
+        row-gap: 10px;
+        &-desc {
+          font-size: 12px;
+        }
+        img {
+          width: 175px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+#second-sec {
+  margin-top: 100px;
+
+  .wrapper {
+    .second-sec-title {
+      color: $black1;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.96px;
+      margin-bottom: 20px;
+    }
+    .second-sec-desc {
+      width: 100%;
+      max-width: 1100px;
+      color: $black1;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 160%;
+      margin-bottom: 80px;
+    }
+  }
+}
+@media only screen and (max-width: 390px) {
+  #second-sec {
+    .wrapper {
+      .second-sec-title {
+        font-size: 20px;
+        letter-spacing: -0.6px;
+      }
+      .second-sec-desc {
+        font-size: 14px;
+        max-width: 360px;
+      }
+    }
+  }
+}
